@@ -51,30 +51,38 @@
 
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
+
+      <div style="position: relative;" id="restaurant-col_address">
+        <h2 id="restaurant-name"></h2>
+        <img id="restaurant-img">
+        <p style="margin-bottom: 4rem;" id="restaurant-cuisine"></p>
+
+        <p id="restaurant-address"></p>
+        <span style="position: absolute; bottom: 2rem;" class="heart">♥</span>
+        
+      </div>
       <div id="restaurant-hours_container">
-        <h3 class="center">Working hours </h3>
+        <h2 >Working hours </h2>
         <table id="restaurant-hours">
         </table>
       </div>
 
-      <div id="restaurant-col_address">
-        <h2 id="restaurant-name"></h2>
-        <img id="restaurant-img">
-        <p id="restaurant-cuisine"></p>
-
-        <p id="restaurant-address"></p>
-      </div>
-      <br>
-      <div class="add-to-favorite">
-        <span class="heart">♥</span>
-        <button class="favorite_btn"></button>
-      </div>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
+
+    <section>
+      <p id="connectivity-message" class="showOfflineNotification">
+        You are offline, You're message will be sent when it's online
+      </p>
+      <div id="offline"></div>
+    </section>
+
+
+
     <section id="comments-form">
       <fieldset class="comments-fieldset">
         <legend class="comments-legend">Post a Comment</legend>
@@ -82,11 +90,13 @@
           <label for="reviewer-name">Name:</label>
           <input style="resize:none;padding: 10px; border-radius: 5px;" id="reviewer-name" type="text" name="name" required>
           
-          <section>
-              <label for="rate">Rate:</label>
-              <fieldset  class="rate"  >
-            <label>
-              <input type="radio" name="rating" id="radio1" value="1" />
+         
+           
+          <fieldset style="position: relative;" role="group"  >
+            <legend  style="font-size: 20px; margin-left: -10px; margin-bottom: 0" for="radio1" >Rate:</legend>
+            <section style="position: absolute; top: -10px; left: 70px" class="rate"  >
+            <label  >
+              <input type="radio" name="rating"  id="radio1" value="1" />
               <span class="icon">★</span>
             </label>
             <label>
@@ -108,16 +118,16 @@
               <span class="icon">★</span>
             </label>
             <label>
-              <input type="radio" name="rating" id="radio4" value="5" checked />
+              <input type="radio" name="rating" id="radio5" value="5" checked />
               <span class="icon">★</span>
               <span class="icon">★</span>
               <span class="icon">★</span>
               <span class="icon">★</span>
               <span class="icon">★</span>
             </label>
-            
+          </section>
           </fieldset>
-        </section>
+        <label for="comment">Your comment</label>
           <textarea style="resize:none;padding: 10px; border-radius: 5px;" name="comments" id="comment" rows="7"  required></textarea>
           <input type="hidden" name="restaurant_id" id="restId">
           <input type="hidden" name="updatedAt" value="">
@@ -127,13 +137,7 @@
 
 
     </section>
-    <section>
-      <p id="connectivity-message" class="showOfflineNotification">
-        You are offline, You're message will be sent when it's online
-      </p>
-      <div id="offline"></div>
-    </section>
-
+  
   </main>
   <!-- End main -->
 

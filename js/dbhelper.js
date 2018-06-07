@@ -5,11 +5,11 @@ dbPromise = idb.open("restaurants-store", 1, function(db) {
   if (!db.objectStoreNames.contains("reviews")) {
     db.createObjectStore("reviews", { keyPath: "id" });
   }
-  if (!db.objectStoreNames.contains("sync-posts")) {
-    db.createObjectStore("sync-posts", { keyPath: "date" });
+  if (!db.objectStoreNames.contains("posts")) {
+    db.createObjectStore("posts", { keyPath: "date" });
   }
-  if (!db.objectStoreNames.contains("favorite-rests")) {
-    db.createObjectStore("favorite-rests", { keyPath: "date" });
+  if (!db.objectStoreNames.contains("favorite")) {
+    db.createObjectStore("favorite", { keyPath: "id" });
   }
 });
 

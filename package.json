@@ -1,0 +1,20 @@
+{
+  "name": "last-stage-resubmit",
+  "version": "1.0.0",
+  "description": "Before testing project, we need to run server to consume api. .",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berc21/last-stage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Berc21/last-stage/issues"
+  },
+  "homepage": "https://github.com/Berc21/last-stage#readme"
+}
