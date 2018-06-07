@@ -45,10 +45,10 @@
           "Sunday": "12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm"
         },
         "createdAt": 1504095568414,
-        "updatedAt": "2018-06-06T23:57:04.587Z",
-        "is_favorite": "false",
+        "updatedAt": "2018-06-07T16:44:49.897Z",
+        "is_favorite": "true",
         "id": 2,
-        "date": "2018-06-06T23:57:04.576Z"
+        "date": "2018-06-07T11:16:38.559Z"
       },
       {
         "name": "Kang Ho Dong Baekjeong",
@@ -70,7 +70,7 @@
           "Sunday": "11:30 am - 2:00 am"
         },
         "createdAt": 1504095571434,
-        "updatedAt": "2018-06-06T23:59:00.688Z",
+        "updatedAt": "2018-06-07T22:15:08.578Z",
         "id": 3,
         "is_favorite": "true",
         "date": "2018-06-06T23:59:00.676Z"
@@ -95,8 +95,8 @@
           "Sunday": "Sat - 10:30 pm"
         },
         "createdAt": 1504095567091,
-        "updatedAt": 1504095567091,
-        "is_favorite": false,
+        "updatedAt": "2018-06-07T15:07:47.379Z",
+        "is_favorite": "true",
         "id": 4
       },
       {
@@ -119,8 +119,8 @@
           "Sunday": "10:00 am - 12:00 am"
         },
         "createdAt": 1504095567071,
-        "updatedAt": 1504095567071,
-        "is_favorite": false,
+        "updatedAt": "2018-06-07T21:55:15.919Z",
+        "is_favorite": "false",
         "id": 5
       },
       {
@@ -523,6 +523,106 @@
         "createdAt": "2018-06-06T23:56:22.232Z",
         "updatedAt": "2018-06-06T23:56:22.232Z",
         "id": 31
+      },
+      {
+        "restaurant_id": "2",
+        "name": "Berkan Çetinkaya",
+        "rating": "3",
+        "comments": "orth competitors, but the Colony really found its way to my heart. when you start with a great crust, top it with top notch cheese and sauce, you've got a winner. But, if you go a step further and add the salty from the pepperoni, the sweet from the honey, and the spicy from the chili oil.... your mouth is confused and happy at the same time.",
+        "date": "2018-06-07T10:32:01.175Z",
+        "createdAt": "2018-06-07T10:32:01.211Z",
+        "updatedAt": "2018-06-07T10:32:01.211Z",
+        "id": 32
+      },
+      {
+        "restaurant_id": "2",
+        "name": "Berkan Çetinkaya",
+        "rating": "5",
+        "comments": " sweet from the honey, and the spicy from the chili oil.... your mouth is confused and happy at the same time.",
+        "date": "2018-06-07T10:43:45.161Z",
+        "createdAt": "2018-06-07T10:44:20.632Z",
+        "updatedAt": "2018-06-07T10:44:20.632Z",
+        "id": 33
+      },
+      {
+        "restaurant_id": "2",
+        "name": "test1",
+        "rating": "5",
+        "comments": " sweet from the honey, and the spicy from the chili oil.... your mouth is confused and happy at the same time.",
+        "date": "2018-06-07T10:44:20.623Z",
+        "createdAt": "2018-06-07T10:44:20.634Z",
+        "updatedAt": "2018-06-07T10:44:20.634Z",
+        "id": 34
+      },
+      {
+        "restaurant_id": "2",
+        "name": "test2",
+        "rating": "5",
+        "comments": "sweet from the honey, a",
+        "date": "2018-06-07T10:47:28.790Z",
+        "createdAt": "2018-06-07T10:47:28.796Z",
+        "updatedAt": "2018-06-07T10:47:28.796Z",
+        "id": 35
+      },
+      {
+        "restaurant_id": "2",
+        "name": "test3",
+        "rating": "5",
+        "comments": "from the honey, a",
+        "date": "2018-06-07T10:47:40.213Z",
+        "createdAt": "2018-06-07T10:52:13.162Z",
+        "updatedAt": "2018-06-07T10:52:13.162Z",
+        "id": 36
+      },
+      {
+        "restaurant_id": "2",
+        "name": "test3",
+        "rating": "5",
+        "comments": "sweet from the honey, a",
+        "date": "2018-06-07T10:52:13.156Z",
+        "createdAt": "2018-06-07T10:52:13.163Z",
+        "updatedAt": "2018-06-07T10:52:13.163Z",
+        "id": 37
+      },
+      {
+        "restaurant_id": "3",
+        "name": "Berkan Çetinkaya",
+        "rating": "5",
+        "comments": "y location as well but Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!",
+        "date": "2018-06-07T16:32:47.863Z",
+        "createdAt": "2018-06-07T16:32:47.872Z",
+        "updatedAt": "2018-06-07T16:32:47.872Z",
+        "id": 38
+      },
+      {
+        "restaurant_id": "3",
+        "name": "Berkan Çetinkaya",
+        "rating": "5",
+        "comments": "Çetinkaya",
+        "date": "2018-06-07T16:34:24.993Z",
+        "createdAt": "2018-06-07T16:34:52.261Z",
+        "updatedAt": "2018-06-07T16:34:52.261Z",
+        "id": 39
+      },
+      {
+        "restaurant_id": "3",
+        "name": "Berkan Çetinkaya",
+        "rating": "4",
+        "comments": "Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!",
+        "date": "2018-06-07T20:41:37.655Z",
+        "createdAt": "2018-06-07T20:41:37.685Z",
+        "updatedAt": "2018-06-07T20:41:37.685Z",
+        "id": 40
+      },
+      {
+        "restaurant_id": "5",
+        "name": "Test",
+        "rating": "5",
+        "comments": "Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!",
+        "date": "2018-06-07T20:41:54.515Z",
+        "createdAt": "2018-06-07T20:41:54.523Z",
+        "updatedAt": "2018-06-07T20:41:54.523Z",
+        "id": 41
       }
     ]
   },
@@ -578,7 +678,7 @@
       "id": 10
     },
     "reviews": {
-      "id": 31
+      "id": 41
     }
   }
 }
