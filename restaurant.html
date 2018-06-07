@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#88003b" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" as="style"  href="style/resturant.css" onload="this.rel='stylesheet'">
+  <title>Restaurant Info</title>
+</head>
+
+<body class="inside">
+  <!-- Beginning header -->
+
+  <header>
+
+    <h1 class="main-title">
+      <a href="/">Restaurant Reviews</a>
+    </h1>
+
+    
+    <nav aria-label="breadcrumbs">
+
+        <ul id="breadcrumb">
+          <li>
+            <a href="/" aria-current="page">Home</a>
+          </li>
+  
+        </ul>
+      </nav>
+    <!-- Beginning map -->
+    <section id="map-container">
+      <div id="map" role="application"></div>
+    </section>
+    <!-- End map -->
+
+    <section class="map-button">
+      <button id="showmap">Show map</button>
+
+    </section>
+
+  </header>
+  <!-- End header -->
+
+  <!-- Beginning main -->
+  <main id="maincontent">
+
+
+    <!-- Beginning restaurant -->
+    <section id="restaurant-container">
+      <div id="restaurant-hours_container">
+        <h3 class="center">Working hours </h3>
+        <table id="restaurant-hours">
+        </table>
+      </div>
+
+      <div id="restaurant-col_address">
+        <h2 id="restaurant-name"></h2>
+        <img id="restaurant-img">
+        <p id="restaurant-cuisine"></p>
+
+        <p id="restaurant-address"></p>
+      </div>
+      <br>
+      <div class="add-to-favorite">
+        <span class="heart">♥</span>
+        <button class="favorite_btn"></button>
+      </div>
+    </section>
+    <!-- end restaurant -->
+    <!-- Beginning reviews -->
+    <section id="reviews-container">
+      <ul id="reviews-list"></ul>
+    </section>
+    <section id="comments-form">
+      <fieldset class="comments-fieldset">
+        <legend class="comments-legend">Post a Comment</legend>
+        <form id="post-message" >
+          <label for="reviewer-name">Name:</label>
+          <input style="resize:none;padding: 10px; border-radius: 5px;" id="reviewer-name" type="text" name="name" required>
+          
+          <section>
+              <label for="rate">Rate:</label>
+              <fieldset  class="rate"  >
+            <label>
+              <input type="radio" name="rating" id="radio1" value="1" />
+              <span class="icon">★</span>
+            </label>
+            <label>
+              <input type="radio" name="rating" id="radio2" value="2" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+            <label>
+              <input type="radio" name="rating" id="radio3" value="3" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>   
+            </label>
+            <label>
+              <input type="radio" name="rating" id="radio4" value="4" />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+            <label>
+              <input type="radio" name="rating" id="radio4" value="5" checked />
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+              <span class="icon">★</span>
+            </label>
+            
+          </fieldset>
+        </section>
+          <textarea style="resize:none;padding: 10px; border-radius: 5px;" name="comments" id="comment" rows="7"  required></textarea>
+          <input type="hidden" name="restaurant_id" id="restId">
+          <input type="hidden" name="updatedAt" value="">
+          <input type="submit" value="Submit" id="post-submit">
+        </form>
+      </fieldset>
+
+
+    </section>
+    <section>
+      <p id="connectivity-message" class="showOfflineNotification">
+        You are offline, You're message will be sent when it's online
+      </p>
+      <div id="offline"></div>
+    </section>
+
+  </main>
+  <!-- End main -->
+
+  <!-- Beginning footer -->
+
+  <footer id="footer">
+    Copyright (c) 2018
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
+  </footer>
+  <!-- End footer -->
+
+  <!-- Beginning scripts -->
+  <!-- Database helpers -->
+
+  <script  src="js/idb.js"></script>
+  <script  src="js/dbhelper.js"></script>
+  <script  src="js/dbpromise.js"></script>
+  <!-- Main javascript file -->
+  <script  src="js/restaurant_info.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function (registration) {
+          console.log('Service Worker registration successful with scope: ',
+            registration.scope);
+        })
+        .catch(function (err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+  </script>
+
+</body>
+
+</html>

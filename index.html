@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#88003b" />
+  <meta name="description" content="This is an example of app for mws nano degree.">
+  <link rel="preload" as="style"  href="style/style.css" onload="this.rel='stylesheet'">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Restaurant Reviews</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="main-title">
+      <a href="/">Restaurant Reviews</a>
+    </h1>
+  </header>
+  </section>
+  <section id="map-container">
+    <div id="map" role="application"></div>
+  </section>
+
+
+
+  <main id="maincontent">
+    <section class="map-button">
+      <button id="showmap">Show map</button>
+    </section>
+
+    <section>
+      <div class="filter-options">
+        <label for="neighborhoods-select">Location:</label>
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <option value="all">All Neighborhoods</option>
+        </select>
+
+        <label for="cuisines-select">Couisine:</label>
+        <select id="cuisines-select" name="cuisines" onChange="updateRestaurants()">
+          <option value="all">All Cuisines</option>
+        </select>
+      </div>
+      <ul id="restaurants-list"></ul>
+
+
+  </main>
+  <footer id="footer">
+    Copyright (c) 2018
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
+  </footer>
+  <script src="js/idb.js" ></script>
+  <script src="js/dbhelper.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function (registration) {
+          console.log('Service Worker registration successful with scope: ',
+            registration.scope);
+        })
+        .catch(function (err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+  </script>
+
+
+  <script async defer src="js/lazysizes.min.js" ></script>
+</body>
+
+</html>

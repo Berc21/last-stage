@@ -1,0 +1,636 @@
+    /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+    /* Document
+   ========================================================================== */
+    /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+ ========================================================================== */
+/**
+* Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+ ========================================================================== */
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+ ========================================================================== */
+/**
+* Remove the gray background on active links in IE 10.
+*/
+a {
+  background-color: transparent;
+}
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+* Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+ ========================================================================== */
+/**
+* Remove the border on images inside links in IE 10.
+*/
+img {
+  border-style: none;
+}
+/* Forms
+ ========================================================================== */
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+* Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+* Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+progress {
+  vertical-align: baseline;
+}
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+textarea {
+  overflow: auto;
+}
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+ ========================================================================== */
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+details {
+  display: block;
+}
+/*
+* Add the correct display in all browsers.
+*/
+summary {
+  display: list-item;
+}
+/* Misc
+ ========================================================================== */
+/**
+* Add the correct display in IE 10+.
+*/
+template {
+  display: none;
+}
+/**
+* Add the correct display in IE 10.
+*/
+[hidden] {
+  display: none;
+}
+/* CSS Document */
+body,
+html,
+nav {
+  height: 100%;
+}
+body,
+td,
+th,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+body,
+.inside {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+a img {
+  border: none 0px #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+#maincontent,
+.inside #maincontent,
+  {
+  background-color: #fff;
+  min-height: 100%;
+}
+footer {
+  background-color: #252831;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 100%;
+}
+
+
+  /* ====================== Navigation ====================== */
+  .main-title {
+    width: 100%;
+    min-width: 2em;
+    background-color: #252831;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 200;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+#navigation,
+.map-button {
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
+/* Display list items side by side */
+#navigation li {
+  padding: 10px;
+}
+#navigation li {
+  padding-right: 10px;
+}
+
+/* ====================== Map ====================== */
+#map,
+.inside #map {
+  height: 400px;
+  max-width: 100%;
+}
+/* ====================== Restaurant Filtering ====================== */
+.filter-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  padding: 10px;
+  background-color: #252831;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.filter-options h2 {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0 20px;
+}
+#neighborhoods-select,
+#cuisines-select {
+  background-color: white;
+  border: 1px solid #fff;
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  height: 35px;
+  letter-spacing: 0;
+  margin: 10px;
+  padding: 0 10px;
+  width: 200px;
+  border-radius: 5px;
+}
+/* ========= Restaurant Listing and Reviews Container ========== */
+#restaurants-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: auto;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+#restaurants-list li {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 340px;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  text-align: left;
+}
+
+#restaurants-list li:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#restaurants-list .restaurant-img {
+  border-radius: 5px;
+}
+#restaurants-list li h2,
+#restaurant-name {
+  color: #143E59;
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 10px;
+  text-transform: uppercase;
+}
+#restaurants-list p,
+#restaurant-address {
+  margin-left: 10px;
+  color: #000;
+  font-size: 1.3em;
+}
+#restaurants-list li p:nth-child(3) {
+  font-weight: bold;
+}
+.star {
+margin: 10px;
+font-size: 3em;
+}
+.favorite, .unfavorite {
+background-color: #143E59;
+color: white;
+font-size: 1.2em;
+border: none;
+padding: 5px;
+}
+.unfavorite {
+background-color: #464444c7;
+
+}
+.favorite:focus,
+.favorite:hover,
+.unfavorite:focus,
+.unfavorite:hover {
+background-color: #bad2ea;
+}
+#restaurants-list li a {
+  background-color: #143E59;
+  border-radius: 5px;
+  margin: auto 10px 10px 10px;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+#no-match {
+  min-height: 470px;
+}
+#no-match h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#showmap {
+  border: none;
+  background: #607D8B;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+label {
+  color: white;
+  font-size: 1.6em;
+}
+/* set google maps error message visible*/
+.gm-err-message {
+  color: black;
+}
+
+#map-container {
+  display: none;
+  transition: display 2s;
+}
+.lazyloaded {
+  display: block;
+}
+/*================Media Queries==========================*/
+@media (min-width: 300px) {
+  #restaurants-list li h2 {
+    font-size: 1.5em;
+  }
+ .main-title a {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 500px) {
+  #restaurants-list {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+ 
+  .main-title a {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 830px) {
+  .main-title a {
+    font-size: 1.8em;
+  }
+
+  #restaurants-list li h2 {
+    font-size: 1.7em;
+  }
+ 
+  .filter-options {
+    flex-flow: row nowrap;
+  }
+  #neighborhoods-select {
+    margin-right: 30px;
+  }
+ 
+}
+@media (min-width: 1260px) {
+  #reviews-list {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  #restaurants-list li {
+    max-width: 300px;
+  }
+  .filter-options {
+    flex-flow: row wrap;
+  }
+  #neighborhoods-select {
+    margin-right: 50px;
+  }
+}
+
